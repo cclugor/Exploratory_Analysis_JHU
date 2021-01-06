@@ -3,6 +3,7 @@
 
 library(tidyr)
 library(dplyr)
+library(readr)
 
 #### data import ####
 household_power_consumption <- read_delim("GitHub/Exploratory_Analysis_JHU/household_power_consumption.txt",";", escape_double = FALSE, col_types = cols(Date = col_date(format = "%d/%m/%Y"),Time = col_time(format = "%H:%M:%S")),trim_ws = TRUE)
